@@ -1,0 +1,23 @@
+* {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+    background-color: #fffbe6;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ffe5b4;
+}
