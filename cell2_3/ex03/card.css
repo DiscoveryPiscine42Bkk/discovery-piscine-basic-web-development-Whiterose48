@@ -1,0 +1,52 @@
+* {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.icon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+h1 {
+    padding: 10px;
+    font-weight: 500;
+}
+
+img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
