@@ -1,0 +1,54 @@
+* {
+    font-family: "Comic Relief", system-ui;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 76px;
+    font-weight: 800;
+    color: aliceblue;
+    text-shadow: 5px 10px 10px purple;
+}
+
+h2 {
+    text-align: center;
+    font-size: 76px;
+    font-weight: 800;
+}
+
+.image1 {
+    background-image: url(https://images4.alphacoders.com/132/1326074.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+}
+
+.image2 {
+    background-image: url(https://staticg.sportskeeda.com/editor/2024/11/df1bf-17307931361473-1920.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 76px;
+    font-weight: 800;
+    color: aliceblue;
+    text-shadow: 5px 10px 10px rgb(184, 184, 5);
+}
