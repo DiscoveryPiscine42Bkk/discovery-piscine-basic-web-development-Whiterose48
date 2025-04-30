@@ -19,6 +19,7 @@ h2 {
 
 .image1 {
     background-image: url(https://images4.alphacoders.com/132/1326074.jpeg);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -38,6 +39,7 @@ h2 {
 
 .image2 {
     background-image: url(https://staticg.sportskeeda.com/editor/2024/11/df1bf-17307931361473-1920.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 100vh;
