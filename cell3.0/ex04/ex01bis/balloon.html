@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Balloon</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        #balloon {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* เชือกลูกโป่ง */
+        .string {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100px;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="balloon"></div>
+        <div class="string"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            const colors = ['red', 'green', 'blue'];
+            let size = 200;
+            let colorIndex = 0;
+
+            function updateBalloon() {
+                $("#balloon").css({
+                    width: size + "px",
+                    height: size + "px",
+                    backgroundColor: colors[colorIndex]
+                });
+            }
+
+            $("#balloon").on("click", function () {
+                size += 10;
+                colorIndex = (colorIndex + 1) % colors.length;
+
+                if (size > 420) {
+                    alert("💥 Boom! The balloon exploded!");
+                    size = 200;
+                    colorIndex = 0;
+                }
+
+                updateBalloon();
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
